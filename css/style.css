@@ -1,0 +1,477 @@
+* {
+  padding: 0px;
+  margin: 0px;
+}
+
+html {
+  font-family: Montserrat;
+  color: #303030;
+}
+
+h1 {
+  font-size: 42px;
+  font-weight: bold;
+  margin: 24px 0px;
+  line-height: 1.4;
+}
+
+h2 {
+  font-size: 36px;
+  color: grey;
+  line-height: 1.4;
+  margin-bottom: 18px;
+}
+
+h3 {
+  font-size: 28px;
+  color: grey;
+  line-height: 1.4;
+}
+
+h4 {
+  font-size: 22px;
+  font-weight: bold;
+  color: #303030;
+  line-height: 1.4;
+}
+
+p {
+  line-height: 1.4;
+}
+
+
+/* HEADER CSS */
+
+header {
+  box-sizing: border-box;
+  padding: 11px 24px;
+  border-bottom: 1px solid #EFEFEF;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  position: fixed;
+  top: 0px;
+  width: 100%;
+  background-color: white;
+  z-index: 10;
+}
+
+.header-mobile {
+  display: none;
+}
+
+.logo {
+  display: flex;
+  align-items: center;
+}
+
+.logo p {
+  font-size: 24px;
+}
+
+#logo-image {
+  height: 42px;
+}
+
+.text-grey {
+  font-weight: normal;
+  color: grey;
+}
+
+ul {
+  display: flex;
+}
+
+li {
+  padding-right: 16px;
+  list-style-type: none;
+}
+
+li:hover {
+  text-decoration: underline;
+}
+
+
+        @media only screen and (max-width: 1000px) {
+          .header-desktop {
+            display: none;
+          }
+
+          .header-mobile {
+            display: block;
+            width: 100%;
+          }
+
+          .header-mobile ul {
+            display: flex;
+            justify-content: space-around;
+          }
+
+          .header-mobile img {
+            height: 38px;
+            width: auto;
+          }
+
+        }
+
+
+/* HERO SECTION CSS */
+
+.hero-section {
+  margin-top: 64px;
+  background-color: #EFEFEF;
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+.hero-section img {
+  box-sizing: border-box;
+  padding: 32px 24px;
+  width: 60%;
+}
+
+.hero-texts {
+  box-sizing: border-box;
+  padding: 32px 24px;
+  width: 35%;
+  margin: 24px;
+}
+
+button {
+  width: 100%;
+  background-color: #303030;
+  font-family: Montserrat;
+  font-size: 22px;
+  color: white;
+  padding: 18px 0px;
+  margin: 24px 0px;
+  border: 0px;
+  transition: background-color 0.4s;
+}
+
+button:hover {
+  background-color: grey;
+}
+
+        @media only screen and (max-width: 1000px) {
+          .hero-section img {
+            width: 100%;
+          }
+
+          .hero-texts {
+            width: 100%;
+          }
+
+          .hero-section img {
+            padding: 0px;
+          }
+
+          button {
+            background-color: grey;
+        }
+
+          button:hover {
+            background-color: #303030;
+          }
+
+      }
+
+
+/* BLOG SECTION CSS */
+
+.blog-section {
+  display: flex;
+}
+
+.left-blog {
+  box-sizing: border-box;
+  padding: 32px 24px;
+  width: 60%;
+  border-right: 1px solid #EFEFEF;
+}
+
+.left-blog img {
+  width: 100%;
+  margin-bottom: 24px;
+}
+
+.blog-author {
+  margin-top: 32px;
+  color: black;
+}
+
+.right-blog {
+  box-sizing: border-box;
+  width: 40%;
+}
+
+.right-blog {
+  width: 40%;
+}
+
+.blog-article {
+  display: flex;
+  align-items: center;
+  border-bottom: 1px solid #EFEFEF;
+  background-color: white;
+  transition: background-color 0.4s;
+}
+
+.blog-article:hover {
+  background-color: #EFEFEF;
+}
+
+.mobile {
+  display: none;
+}
+
+.desktop {
+  width: 30%;
+  height: auto;
+  margin: 32px 24px;
+}
+
+.blog-article a {
+  display: block;
+  margin: 24px 0px;
+  color: cornflowerblue;
+}
+
+.blog-article a:hover {
+  text-decoration: underline;
+}
+
+.blog-article-text {
+  margin-right: 24px;
+}
+
+        @media only screen and (max-width: 1000px) {
+
+          .left-blog {
+            display: none;
+          }
+
+          .right-blog {
+            width: 100%;
+          }
+
+          .blog-article {
+            display: flex;
+            flex-direction: column;
+            align-items: flex-start;
+            border-bottom: 1px solid #EFEFEF;
+            margin: 32px 24px;
+          }
+
+          .desktop {
+            display: none;
+          }
+          
+          .mobile {
+            display: block;
+            width: 100%;
+            margin-bottom: 24px;
+          }
+
+          .blog-article-text {
+            margin: 0px 24px;
+          }
+
+        }
+
+
+
+/* START LEARNING SECTION CSS */
+
+.start-learning-section {
+  background-color: #EFEFEF;
+  padding: 32px 72px;
+}
+
+.start-learning-section h2 {
+  text-align: center;
+  margin-bottom: 32px;
+}
+
+.start-learning-boxes {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: stretch !important;
+}
+
+.start-learning-box {
+  width: 30%;
+  min-width: 350px;
+  margin: 16px;
+  background-color: white;
+}
+
+.start-learning-box img {
+  width: 100%;
+}
+
+.start-learning-box-text {
+  background-color: white;
+  padding: 24px;
+  margin-top: -3px;
+}
+
+.start-learning-box-text p {
+  margin-top: 16px;
+}
+
+.label {
+  width: fit-content;
+  padding: 8px 16px;
+  border-radius: 30px;
+  color: white;
+  position: relative;
+  top: -24px;
+  right: 20px;
+  float: right;
+  z-index: 0;
+}
+
+.label-orange {
+  background-color: orange;
+}
+
+.label-green {
+  background-color: green;
+}
+
+.label-turquoise {
+  background-color: turquoise;
+}
+
+
+        @media only screen and (max-width: 1000px) {
+
+          .start-learning-section {
+            background-color: white;
+            padding: 24px;
+          }
+
+          .start-learning-box {
+            width: 100%;
+            min-width: 350px;
+            margin: 8px 0px;
+          }
+
+          .start-learning-box img {
+            display:none;
+          }
+
+          .start-learning-box-text {
+            background-color: #EFEFEF;
+            text-align: center;
+            transition: background-color 0.5s;
+          }
+
+          .start-learning-box-text:hover {
+            background-color: #AAA;
+          }
+
+          .course-hover-div {
+            display: none;
+            transition: all 1s;
+          }
+
+          .start-learning-box-text:hover .course-hover-div{
+            display: block;
+          }
+
+          .label {
+            display: none;
+          }
+
+        }
+
+
+
+/* THESIS SECTION CSS */
+
+.thesis-section {
+  padding: 32px 24px;
+}
+
+.thesis-section h2 {
+  text-align: center;
+  margin-bottom: 32px;
+}
+
+.thesis-div {
+  display: flex;
+}
+
+.left-thesis {
+  box-sizing: border-box;
+  padding: 32px 24px;
+  width: 60%;
+  height: auto;
+  border-right: 1px solid #EFEFEF;
+}
+
+.right-thesis {
+  width: 40%;
+}
+
+.thesis-section h3 {
+  margin-bottom: 16px;
+}
+
+.thesis-section video {
+  margin-bottom: 24px;
+}
+
+
+        @media only screen and (max-width: 1000px) {
+
+          .thesis-section {
+            padding: 32px 0px;
+          }
+
+          .thesis-texts {
+            padding: 0px 24px;
+          }
+
+          .left-thesis {
+            box-sizing: border-box;
+            padding: 32px 0px;
+            width: 100%;
+            height: 100%;
+            border-right: 1px solid #EFEFEF;
+          }
+
+          .right-thesis {
+            display: none;
+          }
+
+        }
+
+
+
+.footer {
+  padding: 32px 24px;
+  border-top: 1px solid grey;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.footer li:hover {
+  text-decoration: underline;
+}
+
+        @media only screen and (max-width: 1000px) {
+
+          .footer-privacy {
+            display: none;
+          }
+
+        }  
+
+
+
